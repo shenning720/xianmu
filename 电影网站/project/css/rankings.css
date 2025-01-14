@@ -1,0 +1,102 @@
+.rankings-container {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.rankings-header {
+    background: var(--secondary-color);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.rankings-header h1 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.rankings-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 2rem;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+.rankings-list {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.ranking-item:hover {
+    transform: translateX(10px);
+}
+
+.rank-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    min-width: 60px;
+    text-align: center;
+}
+
+.movie-poster-small {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ranking-info {
+    flex: 1;
+}
+
+.ranking-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.ranking-stats {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .rankings-list {
+        padding: 1rem;
+    }
+
+    .ranking-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ranking-stats {
+        justify-content: center;
+    }
+}

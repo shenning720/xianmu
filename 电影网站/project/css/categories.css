@@ -1,0 +1,67 @@
+.categories-container {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.filter-section {
+    padding: 2rem 5%;
+    background: var(--secondary-color);
+}
+
+.filter-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.filter-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.filter-group h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+.movies-grid {
+    padding: 2rem 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .filter-section {
+        padding: 1rem;
+    }
+    
+    .movies-grid {
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}

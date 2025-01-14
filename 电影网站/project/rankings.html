@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排行榜 - 观影空间</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/rankings.css">
+</head>
+
+<body>
+
+    <!-- 导航栏内容保持不变 -->
+    <nav class="navbar">
+        <div class="nav-brand">观影空间</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="categories.html">分类</a></li>
+            <li><a href="rankings.html" class="active">排行榜</a></li>
+            <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="rankings-container">
+        <div class="rankings-header">
+            <h1>电影排行榜</h1>
+            <div class="rankings-tabs">
+                <a href="#weekly" class="tab-btn active">周榜</a>
+                <a href="#monthly" class="tab-btn">月榜</a>
+                <a href="#yearly" class="tab-btn">年榜</a>
+            </div>
+        </div>
+
+        <div class="rankings-list">
+            <!-- 增加更多排名项目 -->
+            <div class="ranking-item">
+                <div class="rank-number">1</div>
+                <img src="./img/流浪地球.jpg" alt="流浪地球3" class="movie-poster-small">
+                <div class="ranking-info">
+                    <h3>流浪地球3</h3>
+                    <div class="ranking-stats">
+                        <span>评分：9.5</span>
+                        <span>播放量：2,890,000</span>
+                    </div>
+                    <p class="movie-brief">人类为拯救地球踏上新的征程...</p>
+                </div>
+                
+            </div>
+
+            <!-- 添加更多排名项目... -->
+            <div class="ranking-item">
+                <div class="rank-number">2</div>
+                <img src="./img/热辣滚烫.jpg" alt="热辣滚烫" class="movie-poster-small">
+                <div class="ranking-info">
+                    <h3>热辣滚烫</h3>
+                    <div class="ranking-stats">
+                        <span>评分：8.8</span>
+                        <span>播放量：2,450,000</span>
+                    </div>
+                    <p class="movie-brief">一个关于追梦的温暖故事...</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>观影空间</h3>
+                <p>您的专业电影平台</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="categories.html">分类</a></li>
+                    <li><a href="rankings.html">排行榜</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                    <a href="#">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 观影空间. 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+
+</html>
